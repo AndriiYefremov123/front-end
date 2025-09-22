@@ -1,0 +1,175 @@
+body {
+    background-color: white;
+    font-size: 30px;
+}
+table {
+
+    border-collapse: collapse;
+    width: 60%;
+    table-layout: fixed;
+    
+}
+
+td {
+    border: 1px solid  #000;
+    height: 35px;
+}
+table tr:nth-child(1) {
+    background-color: #828f8f;
+
+}
+table tr:nth-child(2) {
+    background-color: #f5f582;
+
+}
+table.circle-position {
+    width: 200px;
+    height: 200px;
+    border-collapse: separate;
+    background-color: gray;
+    border-radius: 50%; /* зробить "круглу" форму */
+    border: 50px solid grey;
+    position: absolute;  
+    top: 300px;          
+    left: 50px;  
+    margin-top: 30px;
+}
+
+table.circle-position td:nth-child(1){
+    background-color: #ffffff;
+    border: #ffffff;
+    border-radius: 50%;
+    height: 1px;
+    width: 1px;
+    border-collapse: separate;
+    
+}
+
+.circle1 {
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;       
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}
+
+.circle2{
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;       
+    position: absolute;
+    top: 500px;          
+    left: 120px; 
+    
+}
+
+
+.circle3{
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;       
+    position: absolute;
+    top: 400px;          
+    left: 220px; 
+    
+}
+.circle4{
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;       
+    position: absolute;
+    top: 400px;          
+    left: 20px; 
+    
+}
+.circle5{
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;      
+    position: absolute;
+    top: 325px;          
+    left: 40px; 
+    
+}
+.circle6{
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;       
+    position: absolute;
+    top: 325px;         
+    left: 200px; 
+    
+}
+.circle7{
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;       
+    position: absolute;
+    top: 475px;          
+    left: 200px; 
+    
+}
+.circle8{
+    width: 60px;
+    height: 60px;
+    background-color: white; 
+    border-radius: 50%;       
+    position: absolute;
+    top: 475px;         
+    left: 40px; 
+    
+}
+
+.circle-position2 {
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  border-radius: 50%;
+  position: relative;  
+  margin: 160px 0 0 400px; 
+}
+
+
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform-origin: center;
+}
+
+.circle12 { transform: rotate(0deg)   translate(101px); }
+.circle22 { transform: rotate(45deg)  translate(101px); }
+.circle32 { transform: rotate(90deg)  translate(101px); }
+.circle42 { transform: rotate(135deg) translate(101px); }
+.circle52 { transform: rotate(180deg) translate(101px); }
+.circle62 { transform: rotate(225deg) translate(101px); }
+.circle72 { transform: rotate(270deg) translate(101px); }
+.circle82 { transform: rotate(315deg) translate(101px); }
+
+.center-circle {
+  width: 95px;
+  height: 95px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+
+
+

@@ -1,0 +1,174 @@
+body {
+    background-color: white;
+    font-size: 30px;
+}
+table {
+
+    border-collapse: collapse;
+    width: 60%;
+    table-layout: fixed;
+    
+}
+
+td {
+    border: 1px solid  #000;
+    height: 35px;
+}
+table tr:nth-child(1) {
+    background-color: #828f8f;
+
+}
+table tr:nth-child(2) {
+    background-color: #f5f582;
+
+}
+table.circle-position {
+    width: 200px;
+    height: 200px;
+    border-collapse: separate;
+    background-color: gray;
+    border-radius: 50%; /* зробить "круглу" форму */
+    border: 50px solid grey;
+    position: absolute;  /* відрив від нормального потоку */
+    top: 300px;          /* відстань від верхнього краю сторінки */
+    left: 50px;  
+    margin-top: 30px;
+}
+
+table.circle-position td:nth-child(1){
+    background-color: #ffffff;
+    border: #ffffff;
+    border-radius: 50%;
+    height: 1px;
+    width: 1px;
+    border-collapse: separate;
+    
+}
+
+.circle1 {
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 300px;
+    left: 120px;
+}
+
+.circle2{
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 500px;          /* відстань від верхнього краю сторінки */
+    left: 120px; 
+    
+}
+
+
+.circle3{
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 400px;          /* відстань від верхнього краю сторінки */
+    left: 220px; 
+    
+}
+.circle4{
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 400px;          /* відстань від верхнього краю сторінки */
+    left: 20px; 
+    
+}
+.circle5{
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 325px;          /* відстань від верхнього краю сторінки */
+    left: 40px; 
+    
+}
+.circle6{
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 325px;          /* відстань від верхнього краю сторінки */
+    left: 200px; 
+    
+}
+.circle7{
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 475px;          /* відстань від верхнього краю сторінки */
+    left: 200px; 
+    
+}
+.circle8{
+    width: 60px;
+    height: 60px;
+    background-color: white; /* біле коло */
+    border-radius: 50%;       /* робить круглим */
+    position: absolute;
+    top: 475px;          /* відстань від верхнього краю сторінки */
+    left: 40px; 
+    
+}
+
+.circle-position2 {
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+  border-radius: 50%;
+  position: absolute ;  /* контейнер для малих кіл */
+  top: 200px;
+  left: 400px; /* щоб було як у тебе */
+}
+
+/* Базовий стиль для маленьких кіл */
+.circle {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform-origin: center;
+}
+
+.center-circle {
+  width: 95px;            /* розмір більший за інші */
+  height: 95px;
+  background-color: white; /* білий фон */
+  border-radius: 50%;      /* кругла форма */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* вирівнює центр у центр контейнера */
+  z-index: 2; /* щоб завжди було поверх сірого фону */
+}
+
+.circle01 {transform: rotate(0deg)   translate(1px) rotate(-0deg);}
+.circle12 { transform: rotate(0deg)   translate(102px) rotate(-0deg); }
+.circle22 { transform: rotate(45deg)  translate(102px) rotate(-45deg); }
+.circle32 { transform: rotate(90deg)  translate(102px) rotate(-90deg); }
+.circle42 { transform: rotate(135deg) translate(102px) rotate(-135deg); }
+.circle52 { transform: rotate(180deg) translate(102px) rotate(-180deg); }
+.circle62 { transform: rotate(225deg) translate(102px) rotate(-225deg); }
+.circle72 { transform: rotate(270deg) translate(102px) rotate(-270deg); }
+.circle82 { transform: rotate(315deg) translate(102px) rotate(-315deg); }
+
