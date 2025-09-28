@@ -1,0 +1,54 @@
+body { 
+  background-color: white;
+  font-size: 30px;
+}
+
+#container {
+  background-color: rgb(241, 28, 28);
+  margin: 50px auto;
+  width: 90%;
+}
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* зберігає пропорції картинки, можна змінити на повне заповнення блоку */
+}
+
+/* перший ряд */
+#img-block1 {
+  float: left;
+  width: 50%;
+  height: 200px;
+  background: #846fcf;
+  text-align: center; /* центрує текст*/
+
+}
+#text-block1 {
+  float: left; /* Два float:left підряд будуть одна за одною в тому ж рядку, поки сумарна ширина дозволяє. */
+  width: 50%;  /* ширина елемента від ширини контейнера*/
+  height: 200px; /* щоб зрівняти з картинкою */
+  text-align: center;
+  background: #528be0;
+
+}
+
+/* другий ряд */
+#text-block2 {
+  float: left;
+  width: 100%;
+  height: 200px;
+  background: #8fd3e4;
+  text-align: center;
+
+}
+#img-block2 {
+  float: right;
+  width: 100%;
+  height: 200px;
+  background: #528be0;
+  text-align: center;
+
+}
