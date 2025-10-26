@@ -1,0 +1,67 @@
+/* Загальні стилі сторінки */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  margin: 20px;
+  max-width: 900px;
+  background-color: #f8f9fa;
+}
+
+/* Стилі кнопок під зображенням */
+.image-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  position: relative;
+  z-index: 20; /* кнопки завжди над контейнером зображення */
+}
+
+.image-controls button {
+  padding: 8px 12px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #eee;
+  color: #111;
+  font-size: 14px;
+  transition: background-color 0.15s, transform 0.08s;
+}
+
+.image-controls button:hover { background-color: #ddd; transform: translateY(-1px); }
+.image-controls button:active { transform: translateY(0); }
+
+/* Основні зображення на сторінці */
+section p a img,
+section p img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+/* Контейнер для другого зображення */
+#secondImageContainer {
+  width: 100%;
+  height: 220px;       /* підлаштуй висоту під бажану */
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  overflow: hidden;    /* обрізає зайве при збільшенні */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  margin-top: 12px;
+  position: relative;
+  z-index: 1;          /* нижче за кнопки */
+}
+
+
+#secondImageContainer img {
+  width: 100%;         /* початково займає всю ширину контейнера */
+  height: auto;
+  display: block;
+  transition: width 0.25s ease;
+  max-width: none;     /* дозволяє встановлювати width >100% */
+  object-fit: cover;
+}

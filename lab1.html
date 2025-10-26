@@ -16,8 +16,10 @@
     header, section { margin-bottom: 20px; }
     img { max-width: 100%; height: auto; border-radius: 8px; }
   </style>
+  <link rel="stylesheet" href="css/style1.css">
 </head>
 <body>
+  
   <header>
     <!-- 1-й абзац як H2: прізвище, ім'я, по батькові -->
     <h2>Єфремов Андрій Євгенійович</h2>
@@ -70,7 +72,14 @@
       </a>
     </p>
     <p><small>Натисніть на зображення щоб перейти на офіційний сайт міста.</small></p>
+    <div id="secondImageContainer"></div>
+    <div class="image-controls">
+      <button id="addImage">Додати</button>
+      <button id="increaseImage">Збільшити</button>
+      <button id="decreaseImage">Зменшити</button>
+      <button id="removeImage">Видалити</button>
+    </div>
   </section>
-
+  <script src="js/script.js"></script>
 </body>
 </html>
