@@ -1,4 +1,4 @@
-// validate.js
+
 
 document.getElementById('submitBtn').addEventListener('click', function() {
   // Отримуємо елементи та робимо trim() перед перевіркою
@@ -22,7 +22,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
 
   // Регулярні вирази (оновлені)
   const patterns = {
-    // прізвище (1+ літер, допускає апостроф і дефіс) + пробіл + 2 ініціали (кириличні) з крапками
+    // прізвище 1+ літер, допускає апостроф і дефіс + пробіл + 2 ініціали кириличні з крапками
     pib: new RegExp(
       '^[' + upper + '][' + upper + lower + "'\\-]+\\s[" + upper + ']\\.[' + upper + ']\\.$'
     ),
@@ -32,7 +32,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     faculty: new RegExp('^[' + upper + ']{4}$')
   };
 
-  // debug — покажемо в консоль, що перевіряється
+  // debug покажемо в консоль, що перевіряється
   console.log('ПІБ value:', pibVal);
   console.log('ПІБ pattern:', patterns.pib);
 
@@ -51,7 +51,6 @@ document.getElementById('submitBtn').addEventListener('click', function() {
     const { el, val } = inputs[key];
     const pat = patterns[key];
 
-    // Якщо pattern — RegExp обʼєкт
     const ok = pat.test(val);
     if (!ok) {
       el.classList.add('error');
